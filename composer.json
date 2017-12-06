@@ -1,5 +1,5 @@
 {
-    "name": "PHP 并发异步请求",
+    "name": "lee/request",
     "description": "PHP Curl并发请求; 异步请求",
     "type": "project",
     "keywords": ["PHP并发", "PHP异步"],
