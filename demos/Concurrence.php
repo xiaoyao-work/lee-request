@@ -1,8 +1,5 @@
 <?php
-    require '../Lib/ConcurrenceCurl.class.php';
-    require './BaseService.class.php';
-    require './BaseLogic.class.php';
-
+    require "../vendor/autoload.php";
     $logic = new \BaseLogic();
 
     /* 发送请求 */

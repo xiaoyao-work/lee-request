@@ -1,5 +1,5 @@
 <?php
-namespace Lib;
+namespace Lee\Request;
 
 /**
 * 异步请求
@@ -30,7 +30,7 @@ class Async {
         // $request .= "Accept-Encoding: gzip, deflate, compress;q=0.9\r\n";
         // $request .= "Accept-Charset: ISO-8859-1, utf-8;q=0.66, *;q=0.66\r\n";
         // $request .= "Keep-Alive: 300\r\n";
-        // $request .= "Referer: http://tp3.hhailuo.com/\r\n";
+        $request .= "Referer: http://www.hhailuo.com/\r\n";
         if (!empty($cookies)) {
             $request .= parseCookie($cookies) . "\r\n";
         }

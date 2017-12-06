@@ -1,0 +1,40 @@
+{
+    "name": "PHP 并发异步请求",
+    "description": "PHP Curl并发请求; 异步请求",
+    "type": "project",
+    "keywords": ["PHP并发", "PHP异步"],
+    "homepage": "https://www.hhailuo.com/",
+    "authors": [
+        {
+            "name": "逍遥·李志亮",
+            "email": "xiaoyao.working@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lee\\Request\\": "src/Request"
+        },
+        "classmap": ["demos/"]
+    },
+
+    "minimum-stability": "dev",
+    "scripts": {
+        "post-update-cmd": [
+            "composer dump-autoload --optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "secure-http": false
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+
+}
